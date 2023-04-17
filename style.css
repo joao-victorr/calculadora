@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+:root {
+  --gradient: linear-gradient(0deg, rgba(0,140,230,1) 15%, rgba(0,30,90,1) 90%);
+}
+
+body {
+  background: linear-gradient(0deg, rgba(0,140,230,1) 15%, rgba(0,30,90,1) 90%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 15rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: .1rem solid white;
+  border-image: var(--gradient) 1;
+}
+
+h1 {
+  width: 100%;
+  height: 5rem;
+  text-align: end;
+  font-size: 2.5rem;
+  background: none;
+  border: .1rem solid white;
+  border-image: var(--gradient) 1;
+  color: #FFF;
+
+}
+
+.teclas {
+  width: 100%;
+  height: 100%  ;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: .5rem;
+
+}
+
+.teclas button {
+  font-size: 1.3rem;
+  background: none;
+  border: .1rem solid white;
+  border-image: var(--gradient) 1;
+  color: #FFF;
+}
+
