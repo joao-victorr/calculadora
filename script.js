@@ -14,13 +14,15 @@ function insert(num) {
   }
 
   if(isNaN(lastChar) && isNaN(penultimateChar)) {
+    back()
     display.value = display.value.slice(0, - 1)
+    display.value += num
   }
+
 }
 
 function calcular() {
-  let result = display.value
-  display.value = eval(result)
+  display.value = eval(display.value)
 }
 
 function clean() {
